@@ -8,6 +8,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace Full_GRASP_And_SOLID
 {
     public class Program
@@ -51,16 +55,6 @@ namespace Full_GRASP_And_SOLID
         private static void AddEquipmentToCatalog(string description, double hourlyCost)
         {
             equipmentCatalog.Add(new Equipment(description, hourlyCost));
-        }
-
-        private static Product ProductAt(int index)
-        {
-            return productCatalog[index] as Product;
-        }
-
-        private static Equipment EquipmentAt(int index)
-        {
-            return equipmentCatalog[index] as Equipment;
         }
 
         private static Product GetProduct(string description)
